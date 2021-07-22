@@ -50,6 +50,10 @@ char str12[]="DEPT OF COMPUTER SCIENCE & ENGG";
 
 char str14[]="";
 char str15[]="PRESS t/T TO CONTINUE";
+
+char dia1[]="The birds unitedly travel to reach out to their friend for help";
+char d2[]="Their journey to the other end of the forest to seek help friend, a mouse...";
+
 GLint angle;
 
 //float x = -200.0;
@@ -418,8 +422,17 @@ void mydisplay()
 		}else
 
 
-        drawText(30,24,0,0,0,0,"The birds unitedly travel to reach out to their friend for help");
-        drawText(30,20,0,0,0,0,"Their journey to the other end of the forest to seek help friend, a mouse...");
+
+        glColor3f(1.0,1.0,1.0);
+        glRasterPos2d(25,24);
+        for(i=0;i<strlen(dia1);i++)
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,dia1[i]);
+
+
+        glRasterPos2d(25,20);
+        for(i=0;i<strlen(d2);i++)
+            glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,d2[i]);
+
 		glutKeyboardFunc(mouse_move);
 	}
 	if(display_order==5)
