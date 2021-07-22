@@ -263,70 +263,95 @@ void dialouge3( int button, int state, int x, int y)
 void dialouge5( int button, int state, int x, int y)
 {
    // int static counter=1;
+
     int done=0;
+
     if(!done)
     {
          if (button==GLUT_LEFT_BUTTON&&state==GLUT_DOWN)
          {
+
              switch(counter5)
              {
-                 case 1:
+                 case 1: {
                         printf("c1");
                         glColor3f(1, 1, 1);
-                       //cloud(50, 50, 0.03, 1);
-                       circle(54, 20, 5);
-                       circle(50, 30, 1);
-                       circle(52, 25, 1);
-                       drawText(50, 20, 0, 0, 0, 0, "hello friend");
-                       drawText(49, 18, 0, 0, 0, 0, "we are trapped");
+                     //  cloud(470, 1100, 50, 1);
+                     //cloud(20, 50, 10, 1);
+                       circle(26, 59.5, 6);
+                       circle(26.5, 52, 1);
+                       circle(27, 50, 1);
+                       drawText(22, 60, 0, 0, 0, 0, "hello friend");
+                       drawText(22, 58, 0, 0, 0, 0, "we are trapped!");
                        counter5++;
                        break;
+                       }
 
-                    case 2: {
+                       case 2: {
                        printf("c2");
                        glColor3f(1, 1, 1);
-                       cloud(470, 1100, 60, 1);
-                       circle(485, 1030, 6);
-                       circle(500, 1010, 10);
-                       drawText(435, 1080, 0, 0, 0, 0, "please help us!!");
-                      // drawText(435, 1075, 0, 0, 0, 0, "we have to stay united");
+                     //  cloud(470, 1100, 50, 1);
+                     //cloud(20, 50, 10, 1);
+                       circle(26, 59.5, 6);
+                       circle(26.5, 52, 1);
+                       circle(27, 50, 1);
+                       drawText(21.5, 60, 0, 0, 0, 0, "please save us");
+                      // drawText(22, 58, 0, 0, 0, 0, "we are trapped!");
                        counter5++;
-                         break;
-                       }
+                       break;
+                         }
+
+
                    case 3: {
                        printf("c3");
                        glColor3f(1, 1, 1);
-                       cloud(470, 1100, 50, 1);
-                       circle(485, 1030, 6);
-                       circle(500, 1010, 10);
-                       drawText(435, 1080, 0, 0, 0, 0, "Don't worry my friend");
-                       drawText(435, 1075, 0, 0, 0, 0, "i will definitely help you");
+                      // cloud(470, 1100, 50, 1);
+                       circle(75,48,8);
+                       circle(77.5, 39, 1);
+                       circle(79.5,37,1);
+                       drawText(68, 49, 0, 0, 0, 0, "Don't worry my friend");
+                       drawText(68, 46, 0, 0, 0, 0, "i will definitely help you");
                        counter5++;
                          break;
                          }
+
                      case 4: {
                        printf("c4");
                        glColor3f(1, 1, 1);
-                       cloud(1800, 1100, 50, 1);
-                       circle(1700, 1030, 6);
-                       circle(1650, 1010, 10);
-                       drawText(472, 1120, 0, 0, 0, 0, "I will tare the net apart");
-                       drawText(435, 1075, 0, 0, 0, 0, "And set you free");
+                      // cloud(470, 1100, 50, 1);
+                       circle(75,48,8);
+                       circle(77.5, 39, 1);
+                       circle(79.5,37,1);
+                       drawText(68, 49, 0, 0, 0, 0, "I will tare the net apart");
+                       drawText(69, 46, 0, 0, 0, 0, "And set you free");
                        counter5=0;
                        break;
                          }
-                     default :
+
+                     default :{
+
                              printf("c5");
                              counter5=0;
                                 flag5=1;
                      }
 
+                     }
+
                      glFlush();
                      printf("%d",counter5);
               }
+
+
+
            }
+
         done=1;
+
+
+
 }
+
+
 
 void mydisplay()
 {	glClear(GL_COLOR_BUFFER_BIT);
@@ -393,9 +418,8 @@ void mydisplay()
 		}else
 
 
-        drawText(30,23,0,0,0,0,"All the birds, along with the net they were trapped in, ");
-        drawText(30,20,0,0,0,0,"flew from that place to other end of the forest to seek help");
-        drawText(30,17,0,0,0,0,"from their friend.");
+        drawText(30,24,0,0,0,0,"The birds unitedly travel to reach out to their friend for help");
+        drawText(30,20,0,0,0,0,"Their journey to the other end of the forest to seek help friend, a mouse...");
 		glutKeyboardFunc(mouse_move);
 	}
 	if(display_order==5)
