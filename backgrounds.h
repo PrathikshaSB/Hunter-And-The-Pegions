@@ -1489,24 +1489,10 @@ void back_ground2()
 
         glEnd();
     }
-
-
-
-   /* char str[]="PRESS N/n TO CONTINUE";
-    glColor3f(0,0,0);
-    glRasterPos2f(30,5);
-            for(i=0;i<strlen(str);i++)
-            {
-                glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,str[i]);
-            }*/
-    //glutPostRedisplay();
 }
 
 void back_ground3()
 {
-
-
-
 int i,s_i;
 glClear(GL_COLOR_BUFFER_BIT);
 glClearColor(0.0,0.0,0.0,0.0);
@@ -1562,11 +1548,6 @@ gluOrtho2D(0.0,100.0,0.0,100.0);
 		s_i++;
 		}
 	}
-
-
-
-
-
 
 
  	if(display_order!=3)
@@ -2504,13 +2485,6 @@ glRasterPos2f(30,5);
 }
 
 
-
-
-
-
-
-
-
 void back_ground4()
 {
 
@@ -3343,7 +3317,6 @@ gluOrtho2D(0.0,100.0,0.0,100.0);
 	{
 		if(s_i>200)
 			break;
-
 		int x,y,z;
 		x=rand()%100;
 		y=rand()%100;
@@ -3351,13 +3324,9 @@ gluOrtho2D(0.0,100.0,0.0,100.0);
 		glColor3f(1,1,1);
 		glBegin(GL_POINTS);
 			glPointSize(7);
-
 			glVertex2f(x,y);
 			glPointSize(8);
 			glVertex2f(x,z);
-			////glPointSize(9);
-			//glVertex2f(z,z);
-
 		glEnd();
 		s_i++;
 		}

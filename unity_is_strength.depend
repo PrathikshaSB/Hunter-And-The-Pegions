@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1626759463 source:d:\codeblocks_projects\unity_is_strength\main.cpp
+1627477785 source:d:\codeblocks_projects\unity_is_strength\main.cpp
 	<GL/glut.h>
 	<string.h>
 	<stdio.h>
@@ -296,7 +296,7 @@
 
 1625924871 d:\codeblocks_projects\unity_is_strength\man.h
 
-1626690515 d:\codeblocks_projects\unity_is_strength\backgrounds.h
+1627476359 d:\codeblocks_projects\unity_is_strength\backgrounds.h
 
 1625939128 d:\codeblocks_projects\unity_is_strength\mouse.h
 
