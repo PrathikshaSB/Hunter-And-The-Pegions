@@ -2217,15 +2217,6 @@ glVertex2f(75,10);
  glVertex2f(77,15);
  glVertex2f(78,12);
 glEnd();
- /*
-  bird1(1);
- bird1(2);
-  bird1(3);
-  bird1(4);
- bird1(5);
- bird1(6);
-
-*/
 
 
 

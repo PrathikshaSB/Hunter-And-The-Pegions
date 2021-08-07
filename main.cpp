@@ -789,7 +789,7 @@ void text()
 	{
 		glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,my1[i]);
 	}
-	displayLogo();
+	displayLogo();      //logo being texture mapped
 	glColor3f(0,0,1);
 	glRasterPos2f(235,560);
 	for(i=0;i<strlen(str2);i++)
@@ -950,7 +950,6 @@ void loadLogo(void)
     stbi_image_free(data);
     std::cout << "done" << std::endl;
     glutPostRedisplay();
-    //glutIdleFunc(idle);
 }
 
 int main(int argc,char **argv)
